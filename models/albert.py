@@ -10,7 +10,7 @@
 import torch
 from torch import nn
 from torch.nn import functional
-from transformers import AlbertForSequenceClassification, AlbertConfig
+from transformers import AlbertForSequenceClassification
 
 class AlbertModel(nn.Module):
     def __init__(self, model_path='albert_chinese_base'):
