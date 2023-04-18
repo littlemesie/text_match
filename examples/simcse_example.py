@@ -155,7 +155,7 @@ def predict():
     # np.save(f"../model_file/corpus_embedding", all_embeds)
     all_embeds = np.load("../model_file/corpus_embedding.npy")
     params_config = {
-        "host": "127.0.0.1",
+        "host": "",
         "port": "19530",
         "dimension": 768,
         "index_file_size": 20,
@@ -184,5 +184,5 @@ def predict():
         print(ids)
 
 
-train()
-# predict()
+# train()
+predict()
